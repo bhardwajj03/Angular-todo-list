@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Todo } from '../../Todo';
+import { TodoItemComponent } from "../../todo-item/todo-item.component";
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [],
+  imports: [TodoItemComponent],
   templateUrl: './todos.component.html',
-  styleUrl: './todos.component.css'
+  styleUrls: ['./todos.component.css']
 })
 export class TodosComponent {
-
+  @Input() todo:Todo;
+  todos:Todo[]=[];
+  constructor(){}
 }
