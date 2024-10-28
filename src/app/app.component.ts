@@ -6,7 +6,7 @@ import { TodosComponent } from "./myComponents/todos/todos.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TodosComponent],
+  imports: [RouterOutlet, TodosComponent,app-reactiveform],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
